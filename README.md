@@ -1,82 +1,107 @@
-# Typing Speed Test Web App
+# ⚡ Typing Speed Test Pro
 
-A modern, interactive typing speed test application built with React, TypeScript, and Tailwind CSS. Test your typing speed (WPM) and accuracy with real-time feedback.
+[![React](https://img.shields.io/badge/React-18.3-blue?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+A high-performance, modern typing speed test application built with React and TypeScript. Measure your Words Per Minute (WPM) and accuracy in real-time with instant visual feedback and a sleek user interface.
 
-- Real-time character-by-character feedback
-- WPM (Words Per Minute) calculation
-- Accuracy tracking
-- Timer display
-- Multiple sample texts
-- Clean, modern UI
-- Fully responsive design
-- No database required - completely client-side
+![Project Preview](https://via.placeholder.com/1200x600?text=Typing+Speed+Test+Pro+Preview)
 
-## Running Locally
+## ✨ Features
+
+- **⏱️ Real-time Metrics:**
+  - **WPM (Words Per Minute):** Dynamically calculated as you type.
+  - **Accuracy:** Precise tracking of correct vs. incorrect keystrokes.
+  - **Elapsed Time:** Live timer tracking your performance.
+- **🎨 Dynamic Feedback:** Instant color-coded highlighting (green/red) to indicate typing errors.
+- **📝 Varied Content:** Randomized professional and inspirational quotes for each test session.
+- **🔄 Instant Reset:** Quickly start a new test with one click or automatic focus.
+- **📱 Responsive UI:** Optimized for all screen sizes with a clean, distraction-free environment.
+- **⚡ Performance Optimized:** Built with Vite for ultra-fast load times and smooth interactions.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18 (Hooks, Refs)
+- **Typing:** TypeScript
+- **Styling:** Tailwind CSS (Modern UI/UX)
+- **Icons:** Lucide React
+- **Build Tool:** Vite
+- **Deployment:** Docker & Nginx (Production ready)
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 20 or higher
-- npm
 
-### Installation
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Docker](https://www.docker.com/) (Optional)
 
-```bash
-npm install
-npm run dev
-```
+### Local Installation
 
-The app will be available at `http://localhost:5173`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Typing-Speed-Test-Web-App.git
+   cd Typing-Speed-Test-Web-App
+   ```
 
-## Docker Deployment
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### Using Docker
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Build and run the container:
+### 🐳 Running with Docker
 
-```bash
-docker build -t typing-speed-test .
-docker run -p 3000:80 typing-speed-test
-```
-
-Visit `http://localhost:3000`
-
-### Using Docker Compose
-
-```bash
-docker-compose up -d
-```
-
-Visit `http://localhost:3000`
-
-To stop:
+Deploy the application using Docker Compose:
 
 ```bash
-docker-compose down
+docker-compose up -d --build
+```
+The application will be accessible at [http://localhost:3000](http://localhost:3000).
+
+## 📁 Project Structure
+
+```text
+Typing-Speed-Test-Web-App/
+├── src/
+│   ├── App.tsx           # Core logic, WPM calculations & UI
+│   ├── index.css         # Styling & Tailwind setup
+│   └── main.tsx          # Application entry point
+├── Dockerfile            # Multi-stage production build
+├── docker-compose.yml    # Docker orchestration
+├── nginx.conf            # Nginx server configuration
+└── tailwind.config.js    # UI styling configuration
 ```
 
-## Building for Production
+## 🛠️ Scripts
 
-```bash
-npm run build
-```
+- `npm run dev`: Launch development server.
+- `npm run build`: Build production-ready assets.
+- `npm run lint`: Static code analysis.
+- `npm run typecheck`: TypeScript type validation.
 
-The production-ready files will be in the `dist` directory.
+## 🤝 Contributing
 
-## How to Use
+Contributions are welcome! If you have a feature request or bug report, please open an issue or pull request.
 
-1. Start typing in the text area when ready
-2. The timer starts automatically when you begin typing
-3. Type the displayed text as accurately as possible
-4. Green text indicates correct characters, red indicates mistakes
-5. Complete the entire text to see your final results
-6. Click "New Test" to try again with a different text
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Tech Stack
+## 📄 License
 
-- React 18
-- TypeScript
-- Tailwind CSS
-- Vite
-- Lucide React (icons)
-- Docker & Nginx (for deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ⚡ by [Your Name/Organization]
